@@ -1,0 +1,74 @@
+html, body {
+  height: 100%;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  font-family: $font-text;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+.font-primary {
+  font-family: $font-primary;
+}
+
+.font-text {
+  font-family: $font-text;
+}
+
+.font-medium-1 {
+  font-size: 1.1rem;
+}
+
+.font-medium-2 {
+  font-size: 2rem;
+}
+
+.font-large-1 {
+  font-size: 4.2rem;
+}
+
+.light-weight {
+  font-weight: 300;
+}
+
+.text-white {
+  color: white;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt-1 {
+  margin-top: 0.8rem;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-1 {
+  margin-bottom: 0.8rem;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+a {
+  @extend .font-medium-1;
+
+  color: #383533;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 400;
+}
