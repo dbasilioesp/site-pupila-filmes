@@ -5,20 +5,60 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title Pupila Filmes e Fotografia
-    link(href="https://fonts.googleapis.com/css?family=Elsie|Lato:300,400" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Elsie|Lato:300i,300,400i,400" rel="stylesheet")
   body
-      #grid-home
-        header
-          .header-container
-            .logo 
-              img(src="assets/images/pupila-logo.png")
-            nav
-              a(href="#") Portifólio
-              a(href="#") Serviços
-              a(href="#") Sobre
-              a(href="#") Contato
-        #section-home
+    header
+      .header-container
+        .logo 
+          img(src="assets/images/pupila-logo.png")
+        nav
+          a(href="#") Portifólio
+          a(href="#") Serviços
+          a(href="#") Sobre
+          a(href="#") Contato
+
+    #section-home
+      .content
+        h1.title 
+          img.simbol.mr-1(src="assets/images/simbolo-logo.png")
+          span Pupila, luz e coração.
+        h3.subtitle Filmes e Fotografia
+        button.btn-circle-arrow-down
+
+    #section-services
+      #acompanhamento-infantil
+        .grid
           .content
-            h1.title Pupila, luz e coração.
-            h3.subtitle Filmes e Fotografia
-        
+            h2.title Acompanhamento infantil.
+            p
+              i  
+                | A escolinha é uma fase importante e passa depressa. 
+                br
+                | Mas não se preocupe, podemos registrar esses 
+                br 
+                | momentos de descobertas, amizades e aventuras para que sua família possa recordar com carinho no futuro. 
+                br
+                | Solicite mais informações por email ou WhatsApp.
+          figure
+            image(src="assets/images/acompanhamento-infantil.jpg")
+
+      #ensaios-femininos
+        .grid.grid-inverse
+          .content
+            h2.title Ensaios femininos.
+            p 
+              i 
+                | Do sorriso ao gesto, a beleza é natural no feminino. 
+                | Adoramos isso e sabemos que cada mulher 
+                br 
+                | é linda em sua singularidade - é única!
+                br
+                | Que tal eternizarmos isso em belas imagens? 
+                br 
+                | Solicite mais informações por email ou WhatsApp.
+          figure
+            image(src="assets/images/ensaios-femininos.jpg")
+
+
+
+

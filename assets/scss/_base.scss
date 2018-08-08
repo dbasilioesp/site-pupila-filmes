@@ -31,11 +31,19 @@ body {
 }
 
 .font-large-1 {
-  font-size: 4.2rem;
+  font-size: $dimension-3;
+}
+
+.font-large-2 {
+  font-size: $dimension-4;
 }
 
 .light-weight {
   font-weight: 300;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .text-white {
@@ -47,7 +55,15 @@ body {
 }
 
 .mt-1 {
-  margin-top: 0.8rem;
+  margin-top: $dimension-1;
+}
+
+.mt-2 {
+  margin-top: $dimension-2;
+}
+
+.mt-3 {
+  margin-top: $dimension-3;
 }
 
 .mb-0 {
@@ -55,11 +71,59 @@ body {
 }
 
 .mb-1 {
-  margin-bottom: 0.8rem;
+  margin-bottom: $dimension-1;
+}
+
+.mb-2 {
+  margin-bottom: $dimension-2;
+}
+
+.mb-3 {
+  margin-bottom: $dimension-3;
+}
+
+.mr-0 {
+  margin-right: 0;
+}
+
+.mr-1 {
+  margin-right: $dimension-1;
+}
+
+.ml-0 {
+  margin-left: 0;
+}
+
+.ml-1 {
+  margin-left: $dimension-1;
 }
 
 .container {
   max-width: 1200px;
+}
+
+.arrow-down {
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 1em;
+  transform: rotate(45deg);
+}
+
+.btn-circle-arrow-down {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: $color-primary;
+  border: 0;
+  font-size: 5px;
+
+  &::after {
+    @extend .arrow-down;
+
+    content: "";
+    margin-bottom: 2px;
+  }
 }
 
 a {
