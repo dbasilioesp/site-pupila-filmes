@@ -1,0 +1,2058 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" >
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/base.css" >
+    <link rel="stylesheet" href="styles/controls.css" >
+    <link rel="stylesheet" href="styles/type.css" >
+    <link rel="stylesheet" href="styles/layouts.css" >
+    <link rel="stylesheet" href="styles/structure.css" >
+    <link rel="stylesheet" href="styles/scan/scan-results.css" >
+
+    <link rel="stylesheet" href="styles/highlight/default.min.css">
+</head>
+<body>
+    <div class="section container">
+    <div class="scan-overview" data-id="1534360512794">
+        <div class="scan-overview__header">
+            <p>SCANNED URL:
+                <a href="http://localhost:8081/">http://localhost:8081/</a>
+            </p>
+            <p class="scan-overview__status">
+            finished
+            </p>
+        </div>
+        <div class="scan-overview--details">
+            <div class="scan-overview--warnings">
+                <p class="scan-overview__subheader">warnings</p>
+                <p class="scan-overview__body--red" id="total-warnings">2</p>
+            </div>
+            <div class="scan-overview--errors">
+                <p class="scan-overview__subheader">errors</p>
+                <p class="scan-overview__body--red" id="total-errors">79</p>
+            </div>
+            <div class="scan-overview--time">
+                <p class="scan-overview__subheader">scan time</p>
+                <p class="scan-overview__body--purple">00:40</p>
+            </div>
+            <div class="scan-overview--version">
+                <p class="scan-overview__subheader">version</p>
+                <p class="scan-overview__body--purple">3.2.0</p>
+            </div>
+            <div class="scan-overview--config">
+                <p class="scan-overview__subheader">Scan Configuration</p>
+                <a class="scan-overview__body__link" href="config/1534360512794">View JSON file</a>
+            </div>
+            
+        </div>
+    </div>
+    <div class="layout layout--fifths">
+                <div class="module">
+            <div class="rule-tile rule-tile--failed">
+                <p class="rule-tile__category uppercase-text">
+                    <a href="#Accessibility">Accessibility</a>
+                </p>
+                <img src="images/scan/accessibility.svg" class="rule-icon" alt="" role="presentation" />
+                <div class="rule-list">
+                    <p class="rule-list--failed Accessibility errors">
+                        17 Errors
+                    </p>
+                    <p class="rule-list--passed Accessibility warnings">
+                        0 Warning
+                    </p>
+                </div>
+            </div>
+        </div>
+                <div class="module">
+            <div class="rule-tile rule-tile--passed">
+                <p class="rule-tile__category uppercase-text">
+                    <a href="#Development">Development</a>
+                </p>
+                <img src="images/scan/dev-icon.svg" class="rule-icon" alt="" role="presentation" />
+                <div class="rule-list">
+                    <p class="rule-list--passed Development errors">
+                        0 Error
+                    </p>
+                    <p class="rule-list--passed Development warnings">
+                        0 Warning
+                    </p>
+                </div>
+            </div>
+        </div>
+                <div class="module">
+            <div class="rule-tile rule-tile--failed">
+                <p class="rule-tile__category uppercase-text">
+                    <a href="#Interoperability">Interoperability</a>
+                </p>
+                <img src="images/scan/interoperability.svg" class="rule-icon" alt="" role="presentation" />
+                <div class="rule-list">
+                    <p class="rule-list--failed Interoperability errors">
+                        7 Errors
+                    </p>
+                    <p class="rule-list--failed Interoperability warnings">
+                        2 Warnings
+                    </p>
+                </div>
+            </div>
+        </div>
+                <div class="module">
+            <div class="rule-tile rule-tile--passed">
+                <p class="rule-tile__category uppercase-text">
+                    <a href="#Other">Other</a>
+                </p>
+                <img src="images/scan/other-icon.svg" class="rule-icon" alt="" role="presentation" />
+                <div class="rule-list">
+                    <p class="rule-list--passed Other errors">
+                        0 Error
+                    </p>
+                    <p class="rule-list--passed Other warnings">
+                        0 Warning
+                    </p>
+                </div>
+            </div>
+        </div>
+                <div class="module">
+            <div class="rule-tile rule-tile--passed">
+                <p class="rule-tile__category uppercase-text">
+                    <a href="#PWA">PWA</a>
+                </p>
+                <img src="images/scan/pwa.svg" class="rule-icon" alt="" role="presentation" />
+                <div class="rule-list">
+                    <p class="rule-list--passed PWA errors">
+                        0 Error
+                    </p>
+                    <p class="rule-list--passed PWA warnings">
+                        0 Warning
+                    </p>
+                </div>
+            </div>
+        </div>
+                <div class="module">
+            <div class="rule-tile rule-tile--failed">
+                <p class="rule-tile__category uppercase-text">
+                    <a href="#Performance">Performance</a>
+                </p>
+                <img src="images/scan/performance.svg" class="rule-icon" alt="" role="presentation" />
+                <div class="rule-list">
+                    <p class="rule-list--failed Performance errors">
+                        26 Errors
+                    </p>
+                    <p class="rule-list--passed Performance warnings">
+                        0 Warning
+                    </p>
+                </div>
+            </div>
+        </div>
+                <div class="module">
+            <div class="rule-tile rule-tile--failed">
+                <p class="rule-tile__category uppercase-text">
+                    <a href="#Security">Security</a>
+                </p>
+                <img src="images/scan/security.svg" class="rule-icon" alt="" role="presentation" />
+                <div class="rule-list">
+                    <p class="rule-list--failed Security errors">
+                        29 Errors
+                    </p>
+                    <p class="rule-list--passed Security warnings">
+                        0 Warning
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <section id="results-container" class="section container" role="main" aria-labelledby="errors-warnings" aria-live="polite">
+        <h2 id="errors-warnings">Errors &amp; Warnings</h2>
+        <div class="layout layout--sidebar--alt">
+            <div class="module module--primary results">
+            
+                <section class="rule-result" id="Accessibility">
+                    <div class="rule-result--category">
+                        <h3>Accessibility</h3>
+                        
+                        <button title="expand" class="button-expand-all closed">+ expand all</button>
+                        
+                    </div>
+                    
+                        
+                            <div class="rule-result--details" aria-expanded="false" id="axe">
+    <div class="rule-result--details__header">
+        <p class="rule-title">axe: 17 errors</p>
+        <div class="rule-result__docs">
+            <a class="docs-button" rel="noopener noreferrer" target="_blank" href="https://webhint.io/docs/user-guide/rules/rule-axe/" title="documentation for axe rule">
+                
+                    <img src="images/scan/results-docs-icon.svg" alt="" class="docs-icon" />
+                
+                Documentation
+            </a>
+            <button title="show axe's result details" class="button--details" data-rule="axe">Open details</button>
+        </div>
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Buttons must have discernible text
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/">
+                http://localhost:8081/:19:9
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;button class=&#34;btn-circle-arrow-down&#34;&gt;&lt;/button&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Images must have alternate text
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/">
+                http://localhost:8081/:9:13
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img class=&#34;background&#34; src=&#34;assets/images/layout/topo.png&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Images must have alternate text
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/">
+                http://localhost:8081/:11:28
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img src=&#34;assets/images/layout/pupila-logo.png&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Images must have alternate text
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/">
+                http://localhost:8081/:17:46
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img class=&#34;simbol mr-1&#34; src=&#34;assets/images/layout/simbolo-logo-branco.png&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Images must have alternate text
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/">
+                http://localhost:8081/:31:13
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img src=&#34;assets/images/layout/acompanhamento-infantil.jpg&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Images must have alternate text
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/">
+                http://localhost:8081/:43:19
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img src=&#34;assets/images/layout/ensaios-femininos.jpg&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Images must have alternate text
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/">
+                http://localhost:8081/:47:34
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img class=&#34;parallax&#34; id=&#34;parallax1&#34; src=&#34;assets/images/layout/conte-sua-ideia.jpg&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Images must have alternate text
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/">
+                http://localhost:8081/:60:42
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img src=&#34;assets/images/portfolio/ensaio-feminino/mosaico-1.jpg&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Images must have alternate text
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/">
+                http://localhost:8081/:60:107
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img src=&#34;assets/images/portfolio/ensaio-feminino/mosaico-2.jpg&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Images must have alternate text
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/">
+                http://localhost:8081/:60:172
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img src=&#34;assets/images/portfolio/ensaio-feminino/mosaico-3.jpg&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Images must have alternate text
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/">
+                http://localhost:8081/:60:237
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img src=&#34;assets/images/portfolio/ensaio-feminino/mosaico-4.jpg&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Images must have alternate text
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/">
+                http://localhost:8081/:60:302
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img src=&#34;assets/images/portfolio/ensaio-feminino/mosaico-5.jpg&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Images must have alternate text
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/">
+                http://localhost:8081/:60:367
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img src=&#34;assets/images/portfolio/ensaio-feminino/mosaico-6.jpg&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Images must have alternate text
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/">
+                http://localhost:8081/:64:55
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img class=&#34;simbol mr-1 mb-1&#34; src=&#34;assets/images/layout/simbolo-logo.png&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Images must have alternate text
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/">
+                http://localhost:8081/:67:37
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img class=&#34;mb-1&#34; src=&#34;assets/images/layout/icon-filmagens.jpg&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Images must have alternate text
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/">
+                http://localhost:8081/:71:37
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img class=&#34;mb-1&#34; src=&#34;assets/images/layout/icon-clipes.jpg&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Images must have alternate text
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/">
+                http://localhost:8081/:75:37
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img class=&#34;mb-1&#34; src=&#34;assets/images/layout/icon-fotos.jpg&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    
+        <div class="rule-result--details__footer-msg">
+            
+                <p>With the help of </p>
+            
+
+            <a href="https://github.com/dequelabs/axe-core">
+                <img src="images/scan/axe.png" alt="aXe" class="axe-logo" />
+            </a>
+        </div>
+    
+</div>
+
+                        
+                    
+                </section>
+            
+                <section class="rule-result" id="Development">
+                    <div class="rule-result--category">
+                        <h3>Development</h3>
+                        
+                    </div>
+                    
+                    <div class="rule-result--details">
+    <div class="rule-result__message--passed">
+        <p>No issues</p>
+    </div>
+</div>
+
+                    
+                </section>
+            
+                <section class="rule-result" id="Interoperability">
+                    <div class="rule-result--category">
+                        <h3>Interoperability</h3>
+                        
+                        <button title="expand" class="button-expand-all closed">+ expand all</button>
+                        
+                    </div>
+                    
+                        
+                            <div class="rule-result--details" aria-expanded="false" id="content-type">
+    <div class="rule-result--details__header">
+        <p class="rule-title">content-type: 2 errors</p>
+        <div class="rule-result__docs">
+            <a class="docs-button" rel="noopener noreferrer" target="_blank" href="https://webhint.io/docs/user-guide/rules/rule-content-type/" title="documentation for content-type rule">
+                
+                    <img src="images/scan/results-docs-icon.svg" alt="" class="docs-icon" />
+                
+                Documentation
+            </a>
+            <button title="show content-type's result details" class="button--details" data-rule="content-type">Open details</button>
+        </div>
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            &#39;content-type&#39; header media type value should be &#39;text/javascript&#39;, not &#39;application/javascript&#39;.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/main.js">
+                http://localhost:8081/main.js:88:3
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;script type=&#34;text/javascript&#34; src=&#34;main.js&#34;&gt;&lt;/script&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            &#39;content-type&#39; header media type value should be &#39;image/x-icon&#39;, not &#39;text/html&#39;.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/favicon.ico">
+                http://localhost:8081/favicon.ico
+            </a>
+        </p>
+        
+        
+    </div>
+    
+    
+</div>
+
+                        
+                            <div class="rule-result--details" aria-expanded="false" id="highest-available-document-mode">
+    <div class="rule-result--details__header">
+        <p class="rule-title">highest-available-document-mode: 1 error</p>
+        <div class="rule-result__docs">
+            <a class="docs-button" rel="noopener noreferrer" target="_blank" href="https://webhint.io/docs/user-guide/rules/rule-highest-available-document-mode/" title="documentation for highest-available-document-mode rule">
+                
+                    <img src="images/scan/results-docs-icon.svg" alt="" class="docs-icon" />
+                
+                Documentation
+            </a>
+            <button title="show highest-available-document-mode's result details" class="button--details" data-rule="highest-available-document-mode">Open details</button>
+        </div>
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            &#39;x-ua-compatible&#39; meta element should not be specified as it is not needed.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/">
+                http://localhost:8081/:4:5
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;meta http-equiv=&#34;X-UA-Compatible&#34; content=&#34;ie=edge&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    
+</div>
+
+                        
+                            <div class="rule-result--details" aria-expanded="false" id="no-friendly-error-pages">
+    <div class="rule-result--details__header">
+        <p class="rule-title">no-friendly-error-pages: 1 error</p>
+        <div class="rule-result__docs">
+            <a class="docs-button" rel="noopener noreferrer" target="_blank" href="https://webhint.io/docs/user-guide/rules/rule-no-friendly-error-pages/" title="documentation for no-friendly-error-pages rule">
+                
+                    <img src="images/scan/results-docs-icon.svg" alt="" class="docs-icon" />
+                
+                Documentation
+            </a>
+            <button title="show no-friendly-error-pages's result details" class="button--details" data-rule="no-friendly-error-pages">Open details</button>
+        </div>
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Response with status code 404 should have more than 512 bytes.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/">
+                http://localhost:8081/
+            </a>
+        </p>
+        
+        
+    </div>
+    
+    
+</div>
+
+                        
+                            <div class="rule-result--details" aria-expanded="false" id="html-checker">
+    <div class="rule-result--details__header">
+        <p class="rule-title">html-checker: 5 errors</p>
+        <div class="rule-result__docs">
+            <a class="docs-button" rel="noopener noreferrer" target="_blank" href="https://webhint.io/docs/user-guide/rules/rule-html-checker/" title="documentation for html-checker rule">
+                
+                    <img src="images/scan/results-docs-icon.svg" alt="" class="docs-icon" />
+                
+                Documentation
+            </a>
+            <button title="show html-checker's result details" class="button--details" data-rule="html-checker">Open details</button>
+        </div>
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Start tag seen without seeing a doctype first. Expected “&lt;!DOCTYPE html&gt;”.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/">
+                http://localhost:8081/:1:1
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;html lang=&#34;en&#34;&gt;&lt;head&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Bad value “https://fonts.googleapis.com/css?family=Elsie|Lato:300i,300,400i,400” for attribute “href” on element “link”: Illegal character in query: “|” is not allowed.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/">
+                http://localhost:8081/:6:5
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>itle&gt;
+    &lt;link href=&#34;https://fonts.googleapis.com/css?family=Elsie|Lato:300i,300,400i,400&#34; rel=&#34;stylesheet&#34;&gt;
+  &lt;li</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            An “img” element must have an “alt” attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/">
+                http://localhost:8081/:9:13
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>  &lt;header&gt;&lt;img class=&#34;background&#34; src=&#34;assets/images/layout/topo.png&#34;&gt;
+     </code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            The “type” attribute is unnecessary for JavaScript resources.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/">
+                http://localhost:8081/:88:3
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code> &lt;/div&gt;
+  &lt;script type=&#34;text/javascript&#34; src=&#34;main.js&#34;&gt;&lt;/scri</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            This document appears to be written in Portuguese but the “html” start tag has “lang=&#34;en&#34;”. Consider using “lang=&#34;pt&#34;” (or variant) instead.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/">
+                http://localhost:8081/:1:1
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;html lang=&#34;en&#34;&gt;&lt;head&gt;</code>
+        </div>
+        
+    </div>
+    
+    
+</div>
+
+                        
+                    
+                </section>
+            
+                <section class="rule-result" id="Other">
+                    <div class="rule-result--category">
+                        <h3>Other</h3>
+                        
+                    </div>
+                    
+                    <div class="rule-result--details">
+    <div class="rule-result__message--passed">
+        <p>No issues</p>
+    </div>
+</div>
+
+                    
+                </section>
+            
+                <section class="rule-result" id="PWA">
+                    <div class="rule-result--category">
+                        <h3>PWA</h3>
+                        
+                    </div>
+                    
+                    <div class="rule-result--details">
+    <div class="rule-result__message--passed">
+        <p>No issues</p>
+    </div>
+</div>
+
+                    
+                </section>
+            
+                <section class="rule-result" id="Performance">
+                    <div class="rule-result--category">
+                        <h3>Performance</h3>
+                        
+                        <button title="expand" class="button-expand-all closed">+ expand all</button>
+                        
+                    </div>
+                    
+                        
+                            <div class="rule-result--details" aria-expanded="false" id="http-cache">
+    <div class="rule-result--details__header">
+        <p class="rule-title">http-cache: 21 errors</p>
+        <div class="rule-result__docs">
+            <a class="docs-button" rel="noopener noreferrer" target="_blank" href="https://webhint.io/docs/user-guide/rules/rule-http-cache/" title="documentation for http-cache rule">
+                
+                    <img src="images/scan/results-docs-icon.svg" alt="" class="docs-icon" />
+                
+                Documentation
+            </a>
+            <button title="show http-cache's result details" class="button--details" data-rule="http-cache">Open details</button>
+        </div>
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            No &#34;cache-control&#34; header or empty value found. It should have a value
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/">
+                http://localhost:8081/
+            </a>
+        </p>
+        
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            No &#34;cache-control&#34; header or empty value found. It should have a value
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/main.js">
+                http://localhost:8081/main.js:88:3
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;script type=&#34;text/javascript&#34; src=&#34;main.js&#34;&gt;&lt;/script&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            No &#34;cache-control&#34; header or empty value found. It should have a value
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/style.css">
+                http://localhost:8081/style.css:7:3
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;link href=&#34;style.css&#34; rel=&#34;stylesheet&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Static resources should have a long cache value (31536000) and use the immutable directive:
+public, max-age=0
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/assets/images/portfolio/ensaio-feminino/mosaico-1.jpg">
+                http://localhost:8081 … feminino/mosaico-1.jpg:60:42
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img src=&#34;assets/images/portfolio/ensaio-feminino/mosaico-1.jpg&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Static resources should have a long cache value (31536000) and use the immutable directive:
+public, max-age=0
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/assets/images/layout/topo.png">
+                http://localhost:8081 … images/layout/topo.png:9:13
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img class=&#34;background&#34; src=&#34;assets/images/layout/topo.png&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Static resources should have a long cache value (31536000) and use the immutable directive:
+public, max-age=0
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/assets/images/layout/simbolo-logo-branco.png">
+                http://localhost:8081 … simbolo-logo-branco.png:17:46
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img class=&#34;simbol mr-1&#34; src=&#34;assets/images/layout/simbolo-logo-branco.png&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Static resources should have a long cache value (31536000) and use the immutable directive:
+public, max-age=0
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/assets/images/portfolio/ensaio-feminino/mosaico-3.jpg">
+                http://localhost:8081 … feminino/mosaico-3.jpg:60:172
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img src=&#34;assets/images/portfolio/ensaio-feminino/mosaico-3.jpg&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Static resources should have a long cache value (31536000) and use the immutable directive:
+public, max-age=0
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/assets/images/portfolio/ensaio-feminino/mosaico-5.jpg">
+                http://localhost:8081 … feminino/mosaico-5.jpg:60:302
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img src=&#34;assets/images/portfolio/ensaio-feminino/mosaico-5.jpg&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Static resources should have a long cache value (31536000) and use the immutable directive:
+public, max-age=0
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/assets/images/layout/conte-sua-ideia.jpg">
+                http://localhost:8081 … ayout/conte-sua-ideia.jpg:47:34
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img class=&#34;parallax&#34; id=&#34;parallax1&#34; src=&#34;assets/images/layout/conte-sua-ideia.jpg&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Static resources should have a long cache value (31536000) and use the immutable directive:
+public, max-age=0
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/assets/images/portfolio/ensaio-feminino/mosaico-2.jpg">
+                http://localhost:8081 … feminino/mosaico-2.jpg:60:107
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img src=&#34;assets/images/portfolio/ensaio-feminino/mosaico-2.jpg&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Static resources should have a long cache value (31536000) and use the immutable directive:
+public, max-age=0
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/assets/images/layout/icon-filmagens.jpg">
+                http://localhost:8081 … layout/icon-filmagens.jpg:67:37
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img class=&#34;mb-1&#34; src=&#34;assets/images/layout/icon-filmagens.jpg&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Static resources should have a long cache value (31536000) and use the immutable directive:
+public, max-age=0
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/assets/images/layout/simbolo-logo.png">
+                http://localhost:8081 … layout/simbolo-logo.png:64:55
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img class=&#34;simbol mr-1 mb-1&#34; src=&#34;assets/images/layout/simbolo-logo.png&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Static resources should have a long cache value (31536000) and use the immutable directive:
+public, max-age=0
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/assets/images/layout/pupila-logo.png">
+                http://localhost:8081 … layout/pupila-logo.png:11:28
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img src=&#34;assets/images/layout/pupila-logo.png&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Static resources should have a long cache value (31536000) and use the immutable directive:
+public, max-age=0
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/assets/images/layout/ensaios-femininos.jpg">
+                http://localhost:8081 … ensaios-femininos.jpg:43:19
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img src=&#34;assets/images/layout/ensaios-femininos.jpg&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Static resources should have a long cache value (31536000) and use the immutable directive:
+public, max-age=0
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/assets/images/layout/acompanhamento-infantil.jpg">
+                http://localhost:8081 … ompanhamento-infantil.jpg:31:13
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img src=&#34;assets/images/layout/acompanhamento-infantil.jpg&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Static resources should have a long cache value (31536000) and use the immutable directive:
+public, max-age=0
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/assets/images/layout/icon-clipes.jpg">
+                http://localhost:8081 … layout/icon-clipes.jpg:71:37
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img class=&#34;mb-1&#34; src=&#34;assets/images/layout/icon-clipes.jpg&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Static resources should have a long cache value (31536000) and use the immutable directive:
+public, max-age=0
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/assets/images/layout/icon-fotos.jpg">
+                http://localhost:8081 … layout/icon-fotos.jpg:75:37
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img class=&#34;mb-1&#34; src=&#34;assets/images/layout/icon-fotos.jpg&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Static resources should have a long cache value (31536000) and use the immutable directive:
+public, max-age=0
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/assets/images/portfolio/ensaio-feminino/mosaico-6.jpg">
+                http://localhost:8081 … feminino/mosaico-6.jpg:60:367
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img src=&#34;assets/images/portfolio/ensaio-feminino/mosaico-6.jpg&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            The following directive has an invalid value:
+stale-while-revalidate=604800
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="https://fonts.googleapis.com/css?family=Elsie%7CLato:300i,300,400i,400">
+                https://fonts.googleapis … 7CLato:300i,300,400i,400:6:5
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;link href=&#34;https://fonts.googleapis.com/css?family=Elsie|Lato:300i,300,400i,400&#34; rel=&#34;stylesheet&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Static resources should have a long cache value (31536000) and use the immutable directive:
+public, max-age=0
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/assets/images/portfolio/ensaio-feminino/mosaico-4.jpg">
+                http://localhost:8081 … feminino/mosaico-4.jpg:60:237
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img src=&#34;assets/images/portfolio/ensaio-feminino/mosaico-4.jpg&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            No &#34;cache-control&#34; header or empty value found. It should have a value
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/favicon.ico">
+                http://localhost:8081/favicon.ico
+            </a>
+        </p>
+        
+        
+    </div>
+    
+    
+</div>
+
+                        
+                            <div class="rule-result--details" aria-expanded="false" id="http-compression">
+    <div class="rule-result--details__header">
+        <p class="rule-title">http-compression: 4 errors</p>
+        <div class="rule-result__docs">
+            <a class="docs-button" rel="noopener noreferrer" target="_blank" href="https://webhint.io/docs/user-guide/rules/rule-http-compression/" title="documentation for http-compression rule">
+                
+                    <img src="images/scan/results-docs-icon.svg" alt="" class="docs-icon" />
+                
+                Documentation
+            </a>
+            <button title="show http-compression's result details" class="button--details" data-rule="http-compression">Open details</button>
+        </div>
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Response should be compressed with gzip when gzip compression is requested.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/">
+                http://localhost:8081/
+            </a>
+        </p>
+        
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Response should be compressed with gzip when gzip compression is requested.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/main.js">
+                http://localhost:8081/main.js:88:3
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;script type=&#34;text/javascript&#34; src=&#34;main.js&#34;&gt;&lt;/script&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Response should be compressed with gzip when gzip compression is requested.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/style.css">
+                http://localhost:8081/style.css:7:3
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;link href=&#34;style.css&#34; rel=&#34;stylesheet&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Response should be compressed with Zopfli when gzip compression is requested.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="https://fonts.googleapis.com/css?family=Elsie%7CLato:300i,300,400i,400">
+                https://fonts.googleapis … 7CLato:300i,300,400i,400:6:5
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;link href=&#34;https://fonts.googleapis.com/css?family=Elsie|Lato:300i,300,400i,400&#34; rel=&#34;stylesheet&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    
+</div>
+
+                        
+                            <div class="rule-result--details" aria-expanded="false" id="no-html-only-headers">
+    <div class="rule-result--details__header">
+        <p class="rule-title">no-html-only-headers: 1 error</p>
+        <div class="rule-result__docs">
+            <a class="docs-button" rel="noopener noreferrer" target="_blank" href="https://webhint.io/docs/user-guide/rules/rule-no-html-only-headers/" title="documentation for no-html-only-headers rule">
+                
+                    <img src="images/scan/results-docs-icon.svg" alt="" class="docs-icon" />
+                
+                Documentation
+            </a>
+            <button title="show no-html-only-headers's result details" class="button--details" data-rule="no-html-only-headers">Open details</button>
+        </div>
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Response should not include unneeded &#39;x-frame-options&#39; and &#39;x-xss-protection&#39; headers.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="https://fonts.googleapis.com/css?family=Elsie%7CLato:300i,300,400i,400">
+                https://fonts.googleapis … 7CLato:300i,300,400i,400:6:5
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;link href=&#34;https://fonts.googleapis.com/css?family=Elsie|Lato:300i,300,400i,400&#34; rel=&#34;stylesheet&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    
+</div>
+
+                        
+                    
+                </section>
+            
+                <section class="rule-result" id="Security">
+                    <div class="rule-result--category">
+                        <h3>Security</h3>
+                        
+                        <button title="expand" class="button-expand-all closed">+ expand all</button>
+                        
+                    </div>
+                    
+                        
+                            <div class="rule-result--details" aria-expanded="false" id="ssllabs">
+    <div class="rule-result--details__header">
+        <p class="rule-title">ssllabs: 1 error</p>
+        <div class="rule-result__docs">
+            <a class="docs-button" rel="noopener noreferrer" target="_blank" href="https://webhint.io/docs/user-guide/rules/rule-ssllabs/" title="documentation for ssllabs rule">
+                
+                    <img src="images/scan/results-docs-icon.svg" alt="" class="docs-icon" />
+                
+                Documentation
+            </a>
+            <button title="show ssllabs's result details" class="button--details" data-rule="ssllabs">Open details</button>
+        </div>
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            &#39;http://localhost:8081/&#39; does not support HTTPS.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/">
+                http://localhost:8081/
+            </a>
+        </p>
+        
+        
+    </div>
+    
+    
+        <div class="rule-result--details__footer-msg">
+            
+                <p>To learn more visit </p>
+            
+
+            <a href="https://www.ssllabs.com/ssltest/analyze.html?d=%URL%">
+                <img src="images/scan/qualys-ssl-labs-logo.png" alt="Qualys SSL Labs" class="ssllabs-logo" />
+            </a>
+        </div>
+    
+</div>
+
+                        
+                            <div class="rule-result--details" aria-expanded="false" id="no-disallowed-headers">
+    <div class="rule-result--details__header">
+        <p class="rule-title">no-disallowed-headers: 20 errors</p>
+        <div class="rule-result__docs">
+            <a class="docs-button" rel="noopener noreferrer" target="_blank" href="https://webhint.io/docs/user-guide/rules/rule-no-disallowed-headers/" title="documentation for no-disallowed-headers rule">
+                
+                    <img src="images/scan/results-docs-icon.svg" alt="" class="docs-icon" />
+                
+                Documentation
+            </a>
+            <button title="show no-disallowed-headers's result details" class="button--details" data-rule="no-disallowed-headers">Open details</button>
+        </div>
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Response should not include disallowed &#39;x-powered-by&#39; header.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/">
+                http://localhost:8081/
+            </a>
+        </p>
+        
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Response should not include disallowed &#39;x-powered-by&#39; header.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/main.js">
+                http://localhost:8081/main.js:88:3
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;script type=&#34;text/javascript&#34; src=&#34;main.js&#34;&gt;&lt;/script&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Response should not include disallowed &#39;x-powered-by&#39; header.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/style.css">
+                http://localhost:8081/style.css:7:3
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;link href=&#34;style.css&#34; rel=&#34;stylesheet&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Response should not include disallowed &#39;x-powered-by&#39; header.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/assets/images/portfolio/ensaio-feminino/mosaico-1.jpg">
+                http://localhost:8081 … feminino/mosaico-1.jpg:60:42
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img src=&#34;assets/images/portfolio/ensaio-feminino/mosaico-1.jpg&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Response should not include disallowed &#39;x-powered-by&#39; header.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/assets/images/layout/topo.png">
+                http://localhost:8081 … images/layout/topo.png:9:13
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img class=&#34;background&#34; src=&#34;assets/images/layout/topo.png&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Response should not include disallowed &#39;x-powered-by&#39; header.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/assets/images/layout/simbolo-logo-branco.png">
+                http://localhost:8081 … simbolo-logo-branco.png:17:46
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img class=&#34;simbol mr-1&#34; src=&#34;assets/images/layout/simbolo-logo-branco.png&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Response should not include disallowed &#39;x-powered-by&#39; header.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/assets/images/portfolio/ensaio-feminino/mosaico-3.jpg">
+                http://localhost:8081 … feminino/mosaico-3.jpg:60:172
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img src=&#34;assets/images/portfolio/ensaio-feminino/mosaico-3.jpg&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Response should not include disallowed &#39;x-powered-by&#39; header.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/assets/images/portfolio/ensaio-feminino/mosaico-5.jpg">
+                http://localhost:8081 … feminino/mosaico-5.jpg:60:302
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img src=&#34;assets/images/portfolio/ensaio-feminino/mosaico-5.jpg&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Response should not include disallowed &#39;x-powered-by&#39; header.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/assets/images/layout/conte-sua-ideia.jpg">
+                http://localhost:8081 … ayout/conte-sua-ideia.jpg:47:34
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img class=&#34;parallax&#34; id=&#34;parallax1&#34; src=&#34;assets/images/layout/conte-sua-ideia.jpg&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Response should not include disallowed &#39;x-powered-by&#39; header.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/assets/images/portfolio/ensaio-feminino/mosaico-2.jpg">
+                http://localhost:8081 … feminino/mosaico-2.jpg:60:107
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img src=&#34;assets/images/portfolio/ensaio-feminino/mosaico-2.jpg&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Response should not include disallowed &#39;x-powered-by&#39; header.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/assets/images/layout/icon-filmagens.jpg">
+                http://localhost:8081 … layout/icon-filmagens.jpg:67:37
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img class=&#34;mb-1&#34; src=&#34;assets/images/layout/icon-filmagens.jpg&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Response should not include disallowed &#39;x-powered-by&#39; header.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/assets/images/layout/simbolo-logo.png">
+                http://localhost:8081 … layout/simbolo-logo.png:64:55
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img class=&#34;simbol mr-1 mb-1&#34; src=&#34;assets/images/layout/simbolo-logo.png&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Response should not include disallowed &#39;x-powered-by&#39; header.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/assets/images/layout/pupila-logo.png">
+                http://localhost:8081 … layout/pupila-logo.png:11:28
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img src=&#34;assets/images/layout/pupila-logo.png&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Response should not include disallowed &#39;x-powered-by&#39; header.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/assets/images/layout/ensaios-femininos.jpg">
+                http://localhost:8081 … ensaios-femininos.jpg:43:19
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img src=&#34;assets/images/layout/ensaios-femininos.jpg&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Response should not include disallowed &#39;x-powered-by&#39; header.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/assets/images/layout/acompanhamento-infantil.jpg">
+                http://localhost:8081 … ompanhamento-infantil.jpg:31:13
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img src=&#34;assets/images/layout/acompanhamento-infantil.jpg&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Response should not include disallowed &#39;x-powered-by&#39; header.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/assets/images/layout/icon-clipes.jpg">
+                http://localhost:8081 … layout/icon-clipes.jpg:71:37
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img class=&#34;mb-1&#34; src=&#34;assets/images/layout/icon-clipes.jpg&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Response should not include disallowed &#39;x-powered-by&#39; header.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/assets/images/layout/icon-fotos.jpg">
+                http://localhost:8081 … layout/icon-fotos.jpg:75:37
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img class=&#34;mb-1&#34; src=&#34;assets/images/layout/icon-fotos.jpg&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Response should not include disallowed &#39;x-powered-by&#39; header.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/assets/images/portfolio/ensaio-feminino/mosaico-6.jpg">
+                http://localhost:8081 … feminino/mosaico-6.jpg:60:367
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img src=&#34;assets/images/portfolio/ensaio-feminino/mosaico-6.jpg&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Response should not include disallowed &#39;x-powered-by&#39; header.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/assets/images/portfolio/ensaio-feminino/mosaico-4.jpg">
+                http://localhost:8081 … feminino/mosaico-4.jpg:60:237
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;img src=&#34;assets/images/portfolio/ensaio-feminino/mosaico-4.jpg&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Response should not include disallowed &#39;x-powered-by&#39; header.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/favicon.ico">
+                http://localhost:8081/favicon.ico
+            </a>
+        </p>
+        
+        
+    </div>
+    
+    
+</div>
+
+                        
+                            <div class="rule-result--details" aria-expanded="false" id="x-content-type-options">
+    <div class="rule-result--details__header">
+        <p class="rule-title">x-content-type-options: 4 errors</p>
+        <div class="rule-result__docs">
+            <a class="docs-button" rel="noopener noreferrer" target="_blank" href="https://webhint.io/docs/user-guide/rules/rule-x-content-type-options/" title="documentation for x-content-type-options rule">
+                
+                    <img src="images/scan/results-docs-icon.svg" alt="" class="docs-icon" />
+                
+                Documentation
+            </a>
+            <button title="show x-content-type-options's result details" class="button--details" data-rule="x-content-type-options">Open details</button>
+        </div>
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Response should include &#39;x-content-type-options&#39; header.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/main.js">
+                http://localhost:8081/main.js:88:3
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;script type=&#34;text/javascript&#34; src=&#34;main.js&#34;&gt;&lt;/script&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Response should include &#39;x-content-type-options&#39; header.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/style.css">
+                http://localhost:8081/style.css:7:3
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;link href=&#34;style.css&#34; rel=&#34;stylesheet&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Response should include &#39;x-content-type-options&#39; header.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="https://fonts.googleapis.com/css?family=Elsie%7CLato:300i,300,400i,400">
+                https://fonts.googleapis … 7CLato:300i,300,400i,400:6:5
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;link href=&#34;https://fonts.googleapis.com/css?family=Elsie|Lato:300i,300,400i,400&#34; rel=&#34;stylesheet&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Response should not include unneeded &#39;x-content-type-options&#39; header.
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/favicon.ico">
+                http://localhost:8081/favicon.ico
+            </a>
+        </p>
+        
+        
+    </div>
+    
+    
+</div>
+
+                        
+                            <div class="rule-result--details" aria-expanded="false" id="sri">
+    <div class="rule-result--details__header">
+        <p class="rule-title">sri: 3 errors</p>
+        <div class="rule-result__docs">
+            <a class="docs-button" rel="noopener noreferrer" target="_blank" href="https://webhint.io/docs/user-guide/rules/rule-sri/" title="documentation for sri rule">
+                
+                    <img src="images/scan/results-docs-icon.svg" alt="" class="docs-icon" />
+                
+                Documentation
+            </a>
+            <button title="show sri's result details" class="button--details" data-rule="sri">Open details</button>
+        </div>
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Resource &lt;a href=&#34;http://localhost:8081/main.js&#34;&gt;http://localhost:8081/main.js&lt;/a&gt; requested without the &#34;integrity&#34; attribute
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/main.js">
+                http://localhost:8081/main.js:88:3
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;script type=&#34;text/javascript&#34; src=&#34;main.js&#34;&gt;&lt;/script&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Resource &lt;a href=&#34;http://localhost:8081/style.css&#34;&gt;http://localhost:8081/style.css&lt;/a&gt; requested without the &#34;integrity&#34; attribute
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="http://localhost:8081/style.css">
+                http://localhost:8081/style.css:7:3
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;link href=&#34;style.css&#34; rel=&#34;stylesheet&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            Cross-origin scripts need a &#34;crossorigin&#34; attribute to be eligible for integrity validation
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="https://fonts.googleapis.com/css?family=Elsie%7CLato:300i,300,400i,400">
+                https://fonts.googleapis … 7CLato:300i,300,400i,400:6:5
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;link href=&#34;https://fonts.googleapis.com/css?family=Elsie|Lato:300i,300,400i,400&#34; rel=&#34;stylesheet&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    
+</div>
+
+                        
+                            <div class="rule-result--details" aria-expanded="false" id="strict-transport-security">
+    <div class="rule-result--details__header">
+        <p class="rule-title">strict-transport-security: 1 error</p>
+        <div class="rule-result__docs">
+            <a class="docs-button" rel="noopener noreferrer" target="_blank" href="https://webhint.io/docs/user-guide/rules/rule-strict-transport-security/" title="documentation for strict-transport-security rule">
+                
+                    <img src="images/scan/results-docs-icon.svg" alt="" class="docs-icon" />
+                
+                Documentation
+            </a>
+            <button title="show strict-transport-security's result details" class="button--details" data-rule="strict-transport-security">Open details</button>
+        </div>
+    </div>
+    
+    <div class="rule-result--details__body">
+        <p class="error-badge uppercase-text">error</p>
+        <p>
+            &#39;strict-transport-security&#39; header &#39;max-age&#39; value should be more than 10886400
+        </p>
+        
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="https://fonts.googleapis.com/css?family=Elsie%7CLato:300i,300,400i,400">
+                https://fonts.googleapis … 7CLato:300i,300,400i,400:6:5
+            </a>
+        </p>
+        
+        
+        <div class="rule-result__code">
+            <code>&lt;link href=&#34;https://fonts.googleapis.com/css?family=Elsie|Lato:300i,300,400i,400&#34; rel=&#34;stylesheet&#34;&gt;</code>
+        </div>
+        
+    </div>
+    
+    
+</div>
+
+                        
+                    
+                </section>
+            
+            </div>
+        </div>
+    </section>
+    <section class="section container">
+        <p class="subtitle">Have an issue or problem with the scanner?</p>
+        <p>File an issue on
+            <a rel="noopener noreferrer" target="_blank" href="https://github.com/webhintio/hint/issues/new">GitHub</a> and let us know or try and run webhint again.</p>
+    </section>
+</div>
+
+    <script src="js/highlight/highlight.min.js"></script>
+    <script src="js/highlight/languages/xml.min.js"></script>
+
+    <script src="js/scan/scanner-common.js"></script>
+</body>
+</html>
