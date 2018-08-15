@@ -8,9 +8,10 @@ html(lang="en")
     link(href="https://fonts.googleapis.com/css?family=Elsie|Lato:300i,300,400i,400" rel="stylesheet")
   body
     header
+      img.background(src='assets/images/layout/topo.png')
       .header-container
         .logo 
-          img(src="assets/images/pupila-logo.png")
+          img(src="assets/images/layout/pupila-logo.png")
         nav
           a(href="#") Portifólio
           a(href="#") Serviços
@@ -18,11 +19,12 @@ html(lang="en")
           a(href="#") Contato
 
     #section-home
-      .content
-        h1.title 
-          img.simbol.mr-1(src="assets/images/simbolo-logo.png")
+      .content.text-white.text-center
+        h1.title.mb-0.font-large-3 
+          img.simbol.mr-1(src="assets/images/layout/simbolo-logo-branco.png")
           span Pupila, luz e coração.
-        h3.subtitle Filmes e Fotografia
+        h3.subtitle.mt-0.font-medium-3
+          i Filmes e Fotografia
         button.btn-circle-arrow-down
 
     #section-services
@@ -40,7 +42,7 @@ html(lang="en")
                 br
                 | Solicite mais informações por email ou WhatsApp.
           figure
-            image(src="assets/images/acompanhamento-infantil.jpg")
+            image(src="assets/images/layout/acompanhamento-infantil.jpg")
 
       #ensaios-femininos
         .grid.grid-inverse
@@ -57,8 +59,54 @@ html(lang="en")
                 br 
                 | Solicite mais informações por email ou WhatsApp.
           figure
-            image(src="assets/images/ensaios-femininos.jpg")
+            img(src="assets/images/layout/ensaios-femininos.jpg")
 
+    #section-tellmemore
+      img#parallax1.parallax(src="assets/images/layout/conte-sua-ideia.jpg")
+      .content.text-center.text-white
+        h2.title Conte sua idéia
+        p Pensou em algo diferente? Então vamos conversar. Contate-nos por email ou WhatsApp.
 
+    #section-portfolio
+      .container
+        h2.mt-5.title.text-center.font-large-2
+          | Portifólio
+        div.buttons.mb-4.mt-3
+          button.button-default Ensaios Femininos
+          button.button-default Ensaios Infantis
+        .grid-portfolio.mb-5
+          img(src="assets/images/portfolio/ensaio-feminino/mosaico-1.jpg")
+          img(src="assets/images/portfolio/ensaio-feminino/mosaico-2.jpg")
+          img(src="assets/images/portfolio/ensaio-feminino/mosaico-3.jpg")
+          img(src="assets/images/portfolio/ensaio-feminino/mosaico-4.jpg")
+          img(src="assets/images/portfolio/ensaio-feminino/mosaico-5.jpg")
+          img(src="assets/images/portfolio/ensaio-feminino/mosaico-6.jpg")
+      
+    #section-services-2
+      h1.title.font-large-2.text-center.mb-3
+        img.simbol.mr-1.mb-1(src="assets/images/layout/simbolo-logo.png")
+        span Serviços
+      .container
+        .grid-services-2.mb-3
+          div.grid-service
+            img.mb-1(src="assets/images/layout/icon-filmagens.jpg")
+            h3.title.font-medium-2.mt-1 Filmagens
+            p.mt-0.text-center 
+              small Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eum cupiditate amet assumenda vitae, aspernatur fuga, fugit asperiores, dolores reiciendis similique laboriosam.
+          div.grid-service
+            img.mb-1(src="assets/images/layout/icon-clipes.jpg")
+            h3.title.font-medium-2.mt-1 Clipes
+            p.mt-0.text-center 
+              small Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eum cupiditate amet assumenda vitae, aspernatur fuga, fugit asperiores, dolores reiciendis similique laboriosam.
+          div.grid-service
+            img.mb-1(src="assets/images/layout/icon-fotos.jpg")
+            h3.title.font-medium-2.mt-1 Fotos
+            p.mt-0.text-center 
+              small Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eum cupiditate amet assumenda vitae, aspernatur fuga, fugit asperiores, dolores reiciendis similique laboriosam.
+
+    #section-about
+      .content
+        h2.title Quem Somos?
+        p Pessoas de bem com a vida, com sensibilidade, apaixonados por cinema, fotografia, arte, infância, beleza… Formados em Cinema pela PUC, com experiência em produções audiovisuais (cinema, publicidade e TV), ensaios fotográficos e cobertura de eventos.
 
 

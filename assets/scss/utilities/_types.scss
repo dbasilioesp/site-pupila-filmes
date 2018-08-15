@@ -1,0 +1,53 @@
+// Families
+
+.font-primary {
+  font-family: $font-primary;
+}
+
+.font-text {
+  font-family: $font-text;
+}
+
+// Sizes
+
+.font-medium-1 {
+  font-size: 1.1rem;
+}
+
+.font-medium-2 {
+  font-size: 1.5rem;
+}
+
+.font-medium-3 {
+  font-size: 2rem;
+}
+
+.font-large-1 {
+  font-size: $dimension-3;
+}
+
+.font-large-2 {
+  font-size: 3rem;
+}
+
+.font-large-3 {
+  font-size: $dimension-4;
+}
+
+// Weights
+
+.light-weight {
+  font-weight: 300;
+}
+
+// Colors
+
+.text-white {
+  color: white;
+}
+
+// Alignments
+
+.text-center {
+  text-align: center;
+}

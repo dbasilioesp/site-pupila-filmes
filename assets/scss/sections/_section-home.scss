@@ -1,0 +1,27 @@
+#section-home {
+  background-image: url("../images/layout/foto-principal.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  // self
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  .content {
+    .title {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: $max-tablet) {
+    .content {
+      .title {
+        flex-direction: column;
+      }
+    }
+  }
+}

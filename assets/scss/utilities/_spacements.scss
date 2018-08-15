@@ -1,0 +1,80 @@
+// Container
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+}
+
+// Flex
+
+.justify-content-center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+// Margins
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt-1 {
+  margin-top: $dimension-1;
+}
+
+.mt-2 {
+  margin-top: $dimension-2;
+}
+
+.mt-3 {
+  margin-top: $dimension-3;
+}
+
+.mt-4 {
+  margin-top: $dimension-4;
+}
+
+.mt-5 {
+  margin-top: $dimension-5;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-1 {
+  margin-bottom: $dimension-1;
+}
+
+.mb-2 {
+  margin-bottom: $dimension-2;
+}
+
+.mb-3 {
+  margin-bottom: $dimension-3;
+}
+
+.mb-4 {
+  margin-bottom: $dimension-4;
+}
+
+.mb-5 {
+  margin-bottom: $dimension-5;
+}
+
+.mr-0 {
+  margin-right: 0;
+}
+
+.mr-1 {
+  margin-right: $dimension-1;
+}
+
+.ml-0 {
+  margin-left: 0;
+}
+
+.ml-1 {
+  margin-left: $dimension-1;
+}

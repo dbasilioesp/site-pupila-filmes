@@ -1,3 +1,21 @@
+// Variables and mixins
 @import "./variables";
+
+// Utilities
+@import "./utilities/types";
+@import "./utilities/spacements";
+
+// Base
 @import "./base";
-@import "./layout";
+
+// Components
+@import "./components/buttons";
+@import "./components/gallery";
+
+// Sections
+@import "./sections/header";
+@import "./sections/section-home";
+@import "./sections/section-services";
+@import "./sections/section-tellmemore";
+@import "./sections/section-portfolio";
+@import "./sections/section-services-2";

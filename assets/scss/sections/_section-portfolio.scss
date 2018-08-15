@@ -1,0 +1,25 @@
+#section-portfolio {
+  display: flex;
+  justify-content: center;
+
+  .buttons {
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .grid-portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+
+    img {
+      width: 100%;
+    }
+  }
+}

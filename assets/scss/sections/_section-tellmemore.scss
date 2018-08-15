@@ -1,0 +1,38 @@
+#section-tellmemore {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+  overflow: hidden;
+
+  .parallax {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 200%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .content {
+    z-index: 1;
+
+    @extend .mt-5;
+
+    @extend .mb-5;
+
+    max-width: 380px;
+
+    .title {
+      @extend .mt-0;
+
+      @extend .mb-1;
+    }
+
+    :last-child {
+      @extend .mb-0;
+    }
+  }
+}
