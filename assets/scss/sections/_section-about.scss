@@ -1,0 +1,51 @@
+#section-about {
+  background-color: #673d77;
+  color: white;
+
+  // flex
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .grid-about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .content {
+    max-width: 350px;
+    padding: 0 20px;
+  }
+
+  .photos {
+    max-width: 600px;
+    width: 100%;
+    justify-self: end;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    figcaption {
+      opacity: 0.2;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: $max-tablet) {
+    .grid-about {
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      justify-items: center;
+    }
+
+    .content {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .photos {
+      justify-self: center;
+    }
+  }
+}
