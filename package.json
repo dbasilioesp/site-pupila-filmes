@@ -26,7 +26,11 @@
     "webpack-dev-server": "^3.1.5"
   },
   "dependencies": {
+    "css-doodle": "^0.4.8",
     "gsap": "^2.0.1",
-    "scrollmagic": "^2.0.5"
+    "jquery": "^3.3.1",
+    "scrollmagic": "^2.0.5",
+    "slick-carousel": "^1.8.1",
+    "splitting": "^1.0.5"
   }
 }

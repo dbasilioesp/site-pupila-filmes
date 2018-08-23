@@ -12,6 +12,9 @@
 @import "./components/buttons";
 @import "./components/gallery";
 
+// Plugins
+@import "./plugins/slick";
+
 // Sections
 @import "./sections/header";
 @import "./sections/section-home";
@@ -20,3 +23,4 @@
 @import "./sections/section-portfolio";
 @import "./sections/section-services-2";
 @import "./sections/section-about";
+@import "./sections/section-contact";

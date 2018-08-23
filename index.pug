@@ -13,19 +13,19 @@ html(lang="en")
         .logo 
           img(src="assets/images/layout/pupila-logo.png")
         nav
-          a(href="#") Portifólio
-          a(href="#") Serviços
-          a(href="#") Sobre
-          a(href="#") Contato
+          a(scrollTo href="#section-services") Serviços
+          a(scrollTo href="#section-portfolio") Portifólio
+          a(scrollTo href="#section-about") Sobre
+          a(scrollTo href="#section-contact") Contato
 
     #section-home
       .content.text-white.text-center
-        h1.title.mb-0.font-large-3 
+        div.title-wrap.mb-0 
           img.simbol.mr-1(src="assets/images/layout/simbolo-logo-branco.png")
-          span Pupila, luz e coração.
+          h1.title.font-large-3(data-splitting) Pupila, luz e coração.
         h3.subtitle.mt-0.font-medium-3
-          i Filmes e Fotografia
-        button.btn-circle-arrow-down
+          i Filmes e Fotograffia
+        button.btn-circle-arrow-down(scrollTo href="#section-services")
 
     #section-services
       #acompanhamento-infantil
@@ -62,7 +62,6 @@ html(lang="en")
             img(src="assets/images/layout/ensaios-femininos.jpg")
 
     #section-tellmemore
-      img#parallax1.parallax(src="assets/images/layout/conte-sua-ideia.jpg")
       .content.text-center.text-white
         h2.title Conte sua idéia
         p Pensou em algo diferente? Então vamos conversar. Contate-nos por email ou WhatsApp.
@@ -70,23 +69,31 @@ html(lang="en")
     #section-portfolio
       .container
         h2.mt-5.title.text-center.font-large-2
-          | Portifólio
-        div.buttons.mb-4.mt-3
-          button.button-default Ensaios Femininos
-          button.button-default Ensaios Infantis
-        .grid-portfolio.mb-5
-          img(src="assets/images/portfolio/ensaio-feminino/mosaico-1.jpg")
-          img(src="assets/images/portfolio/ensaio-feminino/mosaico-2.jpg")
-          img(src="assets/images/portfolio/ensaio-feminino/mosaico-3.jpg")
-          img(src="assets/images/portfolio/ensaio-feminino/mosaico-4.jpg")
-          img(src="assets/images/portfolio/ensaio-feminino/mosaico-5.jpg")
-          img(src="assets/images/portfolio/ensaio-feminino/mosaico-6.jpg")
+          | Ensaios Femininos
+        //- div.buttons.mb-4.mt-3
+        //-   button.button-default(present="#gallery-one") Ensaios Femininos
+        //-   button.button-default.inactive(present="#gallery-two") Ensaios Infantis
+        #photos-grid.mb-5
+          #gallery-one
+            .slider-for
+              img(src="assets/images/portfolio/ensaio-feminino/mosaico-1.jpg")
+              //- <iframe width="560" height="600" src="https://www.youtube.com/embed/PL9-6rClgXs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              img(src="assets/images/portfolio/ensaio-feminino/mosaico-2.jpg")
+              img(src="assets/images/portfolio/ensaio-feminino/mosaico-3.jpg")
+              img(src="assets/images/portfolio/ensaio-feminino/mosaico-5.jpg")
+              img(src="assets/images/portfolio/ensaio-feminino/mosaico-6.jpg")
+            .slider-nav
+              img(src="assets/images/portfolio/ensaio-feminino/mosaico-1.jpg")
+              img(src="assets/images/portfolio/ensaio-feminino/mosaico-2.jpg")
+              img(src="assets/images/portfolio/ensaio-feminino/mosaico-3.jpg")
+              img(src="assets/images/portfolio/ensaio-feminino/mosaico-5.jpg")
+              img(src="assets/images/portfolio/ensaio-feminino/mosaico-6.jpg")
       
     #section-services-2
       h1.title.font-large-2.text-center.mb-4
         img.simbol.mr-1.mb-1(src="assets/images/layout/simbolo-logo.png")
         span Serviços
-      .container
+      .container.mb-4
         .grid-services-2.mb-3
           div.grid-service
             img.mb-1(src="assets/images/layout/icon-filmagens.jpg")
@@ -118,3 +125,13 @@ html(lang="en")
             figure
               img(src="assets/images/layout/perfil-roney.png")
               figcaption Roney
+
+    #section-contact
+      div.text-center.mb-4.mt-5
+        h2.title 
+          | Fale Conosco
+        .content
+          p
+            i Telefone: 51 99999-9999
+          p 
+            i E-mail: contato@pupilafilmes.com.br

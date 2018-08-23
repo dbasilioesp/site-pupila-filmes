@@ -1,0 +1,24 @@
+.slider-nav {
+  .slick-arrow {
+    width: 30px;
+    height: 30px;
+
+    &.slick-prev {
+      left: -35px;
+    }
+
+    &.slick-next {
+      right: -35px;
+    }
+
+    &::before,
+    &::after {
+      color: $color-primary;
+      font-size: 30px;
+    }
+  }
+
+  .slick-slide {
+    padding: 5px;
+  }
+}
