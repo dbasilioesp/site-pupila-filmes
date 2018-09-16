@@ -29,7 +29,7 @@ html(lang="en")
 
     #section-services
       #acompanhamento-infantil
-        .grid
+        .grid.mt-3
           .content
             h2.title Acompanhamento infantil.
             p
@@ -45,7 +45,7 @@ html(lang="en")
             image(src="assets/images/layout/acompanhamento-infantil.jpg")
 
       #ensaios-femininos
-        .grid.grid-inverse
+        .grid.grid-inverse.mb-3
           .content
             h2.title Ensaios femininos.
             p 
@@ -69,16 +69,30 @@ html(lang="en")
     #section-portfolio
       .container
         h2.mt-5.title.text-center.font-large-2
-          | Ensaios Femininos
-        //- div.buttons.mb-4.mt-3
-        //-   button.button-default(present="#gallery-one") Ensaios Femininos
-        //-   button.button-default.inactive(present="#gallery-two") Ensaios Infantis
+          | Portifólio
+        div.buttons.mb-4.mt-3
+          button.button-default(present="#gallery-one") Ensaios Femininos
+          button.button-default.inactive(present="#gallery-two") Ensaios Infantis
         #photos-grid.mb-5
-          #gallery-one
+          .gallery#gallery-one.active
             .slider-for
               img(src="assets/images/portfolio/ensaio-feminino/mosaico-1.jpg")
               //- <iframe width="560" height="600" src="https://www.youtube.com/embed/PL9-6rClgXs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
               img(src="assets/images/portfolio/ensaio-feminino/mosaico-2.jpg")
+              img(src="assets/images/portfolio/ensaio-feminino/mosaico-3.jpg")
+              img(src="assets/images/portfolio/ensaio-feminino/mosaico-5.jpg")
+              img(src="assets/images/portfolio/ensaio-feminino/mosaico-6.jpg")
+            .slider-nav
+              img(src="assets/images/portfolio/ensaio-feminino/mosaico-1.jpg")
+              img(src="assets/images/portfolio/ensaio-feminino/mosaico-2.jpg")
+              img(src="assets/images/portfolio/ensaio-feminino/mosaico-3.jpg")
+              img(src="assets/images/portfolio/ensaio-feminino/mosaico-5.jpg")
+              img(src="assets/images/portfolio/ensaio-feminino/mosaico-6.jpg")
+          .gallery#gallery-two
+            .slider-for
+              img(src="assets/images/portfolio/ensaio-feminino/mosaico-2.jpg")
+              img(src="assets/images/portfolio/ensaio-feminino/mosaico-1.jpg")
+              //- <iframe width="560" height="600" src="https://www.youtube.com/embed/PL9-6rClgXs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
               img(src="assets/images/portfolio/ensaio-feminino/mosaico-3.jpg")
               img(src="assets/images/portfolio/ensaio-feminino/mosaico-5.jpg")
               img(src="assets/images/portfolio/ensaio-feminino/mosaico-6.jpg")

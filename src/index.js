@@ -15,6 +15,8 @@ import 'script-loader!gsap/src/uncompressed/plugins/ScrollToPlugin';
 import 'script-loader!slick-carousel/slick/slick';
 import Splitting from "splitting";
 
+import TweenMax from 'gsap/src/uncompressed/TweenMax';
+
 // Scripts
 import './scrollTo';
 
@@ -64,4 +66,26 @@ $('.slider-nav').slick({
       }
     }
   ]
+});
+
+// Gallery
+
+const presentButtons = document.querySelectorAll('[present]');
+
+function inactiveGallery(event) {
+  console.log(event)
+}
+
+function toggleGallery(event) {
+
+  const galleryId = event.target.getAttribute('present');
+  const galleryActive = document.querySelector('.gallery.active');
+  const galleryNext = document.querySelector(galleryId);
+
+
+  TweenMax.to(galleryActive, 1, { opacity: 0, onComplete: inactiveGallery })
+}
+
+presentButtons.forEach(function (button) {
+  button.addEventListener('click', toggleGallery);
 });

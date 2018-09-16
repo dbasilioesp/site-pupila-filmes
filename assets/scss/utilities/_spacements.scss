@@ -15,6 +15,24 @@
 
 // Margins
 
+// @for $i from 0 through length($dimensions) {
+//   .mt-#{$i} {
+//     margin-top: nth($dimensions, $i);
+//   }
+
+//   .mb-#{$i} {
+//     margin-bottom: nth($dimensions, $i);
+//   }
+
+//   .mr-#{$i} {
+//     margin-right: nth($dimensions, $i);
+//   }
+
+//   .ml-#{$i} {
+//     margin-left: nth($dimensions, $i);
+//   }
+// }
+
 .mt-0 {
   margin-top: 0;
 }

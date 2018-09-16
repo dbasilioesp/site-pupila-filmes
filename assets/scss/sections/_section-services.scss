@@ -5,12 +5,9 @@
   align-items: center;
   width: 100%;
   overflow: hidden;
-
-  @extend .mb-3;
+  background-color: white;
 
   .grid {
-    @extend .mt-3;
-
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 1100px;

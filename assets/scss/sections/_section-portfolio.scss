@@ -22,4 +22,12 @@
       width: 100%;
     }
   }
+
+  .gallery {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
 }
