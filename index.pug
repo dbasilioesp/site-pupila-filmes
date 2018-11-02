@@ -4,9 +4,12 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="icon" href="favicon.png")
     title Pupila Filmes e Fotografia
     link(href="https://fonts.googleapis.com/css?family=Elsie|Lato:300i,300,400i,400" rel="stylesheet")
   body
+    #app
+    
     header
       img.background(src='assets/images/layout/topo.png')
       .header-container
@@ -67,64 +70,22 @@ html(lang="en")
         p Pensou em algo diferente? Então vamos conversar. Contate-nos por email ou WhatsApp.
 
     #section-portfolio
-      .container
-        h2.mt-5.title.text-center.font-large-2
-          | Portifólio
-        div.buttons.mb-4.mt-3
-          button.button-default(present="#gallery-one") Ensaios Femininos
-          button.button-default.inactive(present="#gallery-two") Ensaios Infantis
-        #photos-grid.mb-5
-          .gallery#gallery-one.active
-            .slider-for
-              img(src="assets/images/portfolio/ensaio-feminino/mosaico-1.jpg")
-              //- <iframe width="560" height="600" src="https://www.youtube.com/embed/PL9-6rClgXs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-              img(src="assets/images/portfolio/ensaio-feminino/mosaico-2.jpg")
-              img(src="assets/images/portfolio/ensaio-feminino/mosaico-3.jpg")
-              img(src="assets/images/portfolio/ensaio-feminino/mosaico-5.jpg")
-              img(src="assets/images/portfolio/ensaio-feminino/mosaico-6.jpg")
-            .slider-nav
-              img(src="assets/images/portfolio/ensaio-feminino/mosaico-1.jpg")
-              img(src="assets/images/portfolio/ensaio-feminino/mosaico-2.jpg")
-              img(src="assets/images/portfolio/ensaio-feminino/mosaico-3.jpg")
-              img(src="assets/images/portfolio/ensaio-feminino/mosaico-5.jpg")
-              img(src="assets/images/portfolio/ensaio-feminino/mosaico-6.jpg")
-          .gallery#gallery-two
-            .slider-for
-              img(src="assets/images/portfolio/ensaio-feminino/mosaico-2.jpg")
-              img(src="assets/images/portfolio/ensaio-feminino/mosaico-1.jpg")
-              //- <iframe width="560" height="600" src="https://www.youtube.com/embed/PL9-6rClgXs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-              img(src="assets/images/portfolio/ensaio-feminino/mosaico-3.jpg")
-              img(src="assets/images/portfolio/ensaio-feminino/mosaico-5.jpg")
-              img(src="assets/images/portfolio/ensaio-feminino/mosaico-6.jpg")
-            .slider-nav
-              img(src="assets/images/portfolio/ensaio-feminino/mosaico-1.jpg")
-              img(src="assets/images/portfolio/ensaio-feminino/mosaico-2.jpg")
-              img(src="assets/images/portfolio/ensaio-feminino/mosaico-3.jpg")
-              img(src="assets/images/portfolio/ensaio-feminino/mosaico-5.jpg")
-              img(src="assets/images/portfolio/ensaio-feminino/mosaico-6.jpg")
+      h2.mt-5.title.text-center.font-large-2
+        | Portifólio
+      div.buttons.mb-4.mt-3
+        button.button-default(present="#gallery-one") Ensaios Femininos
+        button.button-default.inactive(present="#gallery-two") Ensaios Infantis
+      #photos-grid.mb-5
+        .gallery
+          .gallery__thumbs
+            img(src="assets/images/portfolio/ensaio-feminino/foto-001.jpg")
+            img(src="assets/images/portfolio/ensaio-feminino/foto-002.jpg")
+            img(src="assets/images/portfolio/ensaio-feminino/foto-003.jpg")
+            img(src="assets/images/portfolio/ensaio-feminino/foto-004.jpg")
+            img(src="assets/images/portfolio/ensaio-feminino/foto-005.jpg")
+          .gallery__display
+            img(src="assets/images/portfolio/ensaio-feminino/foto-001.jpg")
       
-    #section-services-2
-      h1.title.font-large-2.text-center.mb-4
-        img.simbol.mr-1.mb-1(src="assets/images/layout/simbolo-logo.png")
-        span Serviços
-      .container.mb-4
-        .grid-services-2.mb-3
-          div.grid-service
-            img.mb-1(src="assets/images/layout/icon-filmagens.jpg")
-            h3.title.font-medium-2.mt-1 Filmagens
-            p.mt-0.text-center 
-              small Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eum cupiditate amet assumenda vitae, aspernatur fuga, fugit asperiores, dolores reiciendis similique laboriosam.
-          div.grid-service
-            img.mb-1(src="assets/images/layout/icon-clipes.jpg")
-            h3.title.font-medium-2.mt-1 Clipes
-            p.mt-0.text-center 
-              small Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eum cupiditate amet assumenda vitae, aspernatur fuga, fugit asperiores, dolores reiciendis similique laboriosam.
-          div.grid-service
-            img.mb-1(src="assets/images/layout/icon-fotos.jpg")
-            h3.title.font-medium-2.mt-1 Fotos
-            p.mt-0.text-center 
-              small Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eum cupiditate amet assumenda vitae, aspernatur fuga, fugit asperiores, dolores reiciendis similique laboriosam.
-
     #section-about
       .container.mb-4.mt-4
         .grid-about
