@@ -6,6 +6,7 @@
   width: 100%;
   overflow: hidden;
   background-color: white;
+  overflow: hidden;
 
   .grid {
     display: grid;
@@ -22,14 +23,6 @@
       background-color: rgba(255, 255, 255, 0.9);
       box-shadow: 0 0 32px 0 rgba(46, 42, 39, 0.1);
       box-sizing: border-box;
-
-      .title {
-        @extend .font-primary;
-
-        @extend .mt-1;
-
-        @extend .font-large-1;
-      }
     }
 
     figure {
@@ -62,7 +55,8 @@
   @media (max-width: 1024px) {
     margin-bottom: 0;
 
-    .grid, .grid.grid-inverse {
+    .grid,
+    .grid.grid-inverse {
       grid-template-columns: 1fr;
 
       .content {

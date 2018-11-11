@@ -1,16 +1,16 @@
 .button-default {
   @extend .font-primary;
 
-  @extend .font-medium-1;
-
   background-color: transparent;
-  border: 1px solid $color-primary;
-  color: $color-primary;
+  border: 1px solid $color-disabled;
+  color: $color-disabled;
   padding: 15px 50px;
+  font-size: 1.3rem;
 
-  &.inactive {
-    border-color: $color-disabled;
-    color: $color-disabled;
+  &.active {
+    border-color: $color-primary;
+    background-color: $color-primary;
+    color: white;
   }
 }
 

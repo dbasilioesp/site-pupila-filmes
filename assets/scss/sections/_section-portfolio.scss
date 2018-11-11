@@ -1,40 +1,29 @@
 #section-portfolio {
   .buttons {
-    max-width: 500px;
+    max-width: 600px;
     display: flex;
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
+    flex-direction: column;
+    padding: 0 20px;
   }
 
-  .gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  .buttons button {
+    max-width: 400px;
+    margin: 0 auto 1rem;
+    width: 100%;
   }
 
-  .gallery__thumbs {
-    width: 50vw;
-    padding: 20px;
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 280px);
-    grid-gap: 20px;
-    grid-auto-rows: 180px;
-    justify-content: center;
-
-    img {
-      width: 100%;
+  @media screen and (min-width: $min-tablet) {
+    .buttons {
+      flex-direction: row;
     }
-  }
 
-  .gallery__display {
-    align-self: center;
-    height: 100%;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    .buttons button {
+      max-width: none;
+      width: auto;
+      margin: 0;
     }
   }
 }

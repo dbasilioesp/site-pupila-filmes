@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --watch",
+    "start": "webpack-dev-server --mode development --watch --open",
     "build": "webpack --mode production"
   },
   "author": "",
@@ -12,6 +12,7 @@
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
+    "babel-loader": "^8.0.4",
     "css-loader": "^1.0.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^1.1.11",
@@ -28,8 +29,11 @@
     "webpack-dev-server": "^3.1.5"
   },
   "dependencies": {
+    "basiclightbox": "^5.0.1",
     "gsap": "^2.0.1",
     "jquery": "^3.3.1",
+    "lodash": "^4.17.11",
+    "photoswipe": "^4.1.2",
     "scrollmagic": "^2.0.5",
     "slick-carousel": "^1.8.1",
     "splitting": "^1.0.5"

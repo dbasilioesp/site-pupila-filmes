@@ -11,9 +11,11 @@
 // Components
 @import "./components/buttons";
 @import "./components/gallery";
+@import "./components/hover-thumb";
 
 // Plugins
 @import "./plugins/slick";
+@import "./plugins/basiclightbox";
 
 // Sections
 @import "./sections/header";

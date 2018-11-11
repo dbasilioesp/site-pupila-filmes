@@ -6,7 +6,7 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     link(rel="icon" href="favicon.png")
     title Pupila Filmes e Fotografia
-    link(href="https://fonts.googleapis.com/css?family=Elsie|Lato:300i,300,400i,400" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Elsie:900|Lato:300i,300,400i,400" rel="stylesheet")
   body
     #app
     
@@ -25,8 +25,8 @@ html(lang="en")
       .content.text-white.text-center
         div.title-wrap.mb-0 
           img.simbol.mr-1(src="assets/images/layout/simbolo-logo-branco.png")
-          h1.title.font-large-3(data-splitting) Pupila, luz e coração.
-        h3.subtitle.mt-0.font-medium-3
+          h1.title(data-splitting) Pupila, luz e coração.
+        h3.subtitle.mt-0
           i Filmes e Fotograffia
         button.btn-circle-arrow-down(scrollTo href="#section-services")
 
@@ -73,26 +73,81 @@ html(lang="en")
       h2.mt-5.title.text-center.font-large-2
         | Portifólio
       div.buttons.mb-4.mt-3
-        button.button-default(present="#gallery-one") Ensaios Femininos
-        button.button-default.inactive(present="#gallery-two") Ensaios Infantis
+        button.button-default.gallery__switch.active(data-button-gallery="1") Ensaios Femininos
+        button.button-default.gallery__switch(data-button-gallery="2") Ensaios Infantis
       #photos-grid.mb-5
         .gallery
-          .gallery__thumbs
-            img(src="assets/images/portfolio/ensaio-feminino/foto-001.jpg")
-            img(src="assets/images/portfolio/ensaio-feminino/foto-002.jpg")
-            img(src="assets/images/portfolio/ensaio-feminino/foto-003.jpg")
-            img(src="assets/images/portfolio/ensaio-feminino/foto-004.jpg")
-            img(src="assets/images/portfolio/ensaio-feminino/foto-005.jpg")
-          .gallery__display
-            img(src="assets/images/portfolio/ensaio-feminino/foto-001.jpg")
-      
+          .gallery__book.active(data-gallery="1")
+            .gallery__thumb.hover-thumb.is-youtube
+              img(src="assets/images/portfolio/ensaio-feminino/foto-001.jpg", data-youtube="https://www.youtube.com/embed/Scxs7L0vhZ4")
+            .gallery__thumb.hover-thumb
+              img(src="assets/images/portfolio/ensaio-feminino/foto-002.jpg")
+            .gallery__thumb.hover-thumb
+              img(src="assets/images/portfolio/ensaio-feminino/foto-003.jpg")
+            .gallery__thumb.hover-thumb
+              img(src="assets/images/portfolio/ensaio-feminino/foto-004.jpg")
+            .gallery__thumb.hover-thumb
+              img(src="assets/images/portfolio/ensaio-feminino/foto-005.jpg")
+            .gallery__thumb.hover-thumb
+              img(src="assets/images/portfolio/ensaio-feminino/foto-001.jpg")
+            .gallery__thumb.hover-thumb
+              img(src="assets/images/portfolio/ensaio-feminino/foto-002.jpg")
+            .gallery__thumb.hover-thumb
+              img(src="assets/images/portfolio/ensaio-feminino/foto-003.jpg")
+            .gallery__thumb.hover-thumb
+              img(src="assets/images/portfolio/ensaio-feminino/foto-004.jpg")
+            .gallery__thumb.hover-thumb
+              img(src="assets/images/portfolio/ensaio-feminino/foto-005.jpg")
+            .gallery__thumb.hover-thumb
+              img(src="assets/images/portfolio/ensaio-feminino/foto-005.jpg")
+            .gallery__thumb.hover-thumb
+              img(src="assets/images/portfolio/ensaio-feminino/foto-001.jpg")
+            .gallery__thumb.hover-thumb
+              img(src="assets/images/portfolio/ensaio-feminino/foto-002.jpg")
+            .gallery__thumb.hover-thumb
+              img(src="assets/images/portfolio/ensaio-feminino/foto-003.jpg")
+            .gallery__thumb.hover-thumb
+              img(src="assets/images/portfolio/ensaio-feminino/foto-004.jpg")
+            .gallery__thumb.hover-thumb
+              img(src="assets/images/portfolio/ensaio-feminino/foto-005.jpg")
+          .gallery__book(data-gallery="2")
+            .gallery__thumb.hover-thumb
+              img(src="assets/images/portfolio/ensaio-feminino/foto-002.jpg")
+            .gallery__thumb.hover-thumb
+              img(src="assets/images/portfolio/ensaio-feminino/foto-004.jpg")
+            .gallery__thumb.hover-thumb
+              img(src="assets/images/portfolio/ensaio-feminino/foto-003.jpg")
+            .gallery__thumb.hover-thumb
+              img(src="assets/images/portfolio/ensaio-feminino/foto-001.jpg")
+            .gallery__thumb.hover-thumb
+              img(src="assets/images/portfolio/ensaio-feminino/foto-001.jpg")
+            .gallery__thumb.hover-thumb
+              img(src="assets/images/portfolio/ensaio-feminino/foto-005.jpg")
+            .gallery__thumb.hover-thumb
+              img(src="assets/images/portfolio/ensaio-feminino/foto-002.jpg")
+            .gallery__thumb.hover-thumb
+              img(src="assets/images/portfolio/ensaio-feminino/foto-003.jpg")
+            .gallery__thumb.hover-thumb
+              img(src="assets/images/portfolio/ensaio-feminino/foto-005.jpg")
+            .gallery__thumb.hover-thumb
+              img(src="assets/images/portfolio/ensaio-feminino/foto-005.jpg")
+            .gallery__thumb.hover-thumb
+              img(src="assets/images/portfolio/ensaio-feminino/foto-004.jpg")
+            .gallery__thumb.hover-thumb
+              img(src="assets/images/portfolio/ensaio-feminino/foto-001.jpg")
     #section-about
       .container.mb-4.mt-4
         .grid-about
-          .content
-            h2.title Quem Somos?
+          div
+            h2.title Saiba quem nós somos
             p 
               i Pessoas de bem com a vida, com sensibilidade, apaixonados por cinema, fotografia, arte, infância, beleza… Formados em Cinema pela PUC, com experiência em produções audiovisuais (cinema, publicidade e TV), ensaios fotográficos e cobertura de eventos.
+            h2.title 
+              | E como falar conosco
+            p
+              i Telefone: 51 99999-9999
+              br
+              i E-mail: contato@pupilafilmes.com.br
           .photos
             figure
               img(src="assets/images/layout/perfil-daia.png")
@@ -100,13 +155,3 @@ html(lang="en")
             figure
               img(src="assets/images/layout/perfil-roney.png")
               figcaption Roney
-
-    #section-contact
-      div.text-center.mb-4.mt-5
-        h2.title 
-          | Fale Conosco
-        .content
-          p
-            i Telefone: 51 99999-9999
-          p 
-            i E-mail: contato@pupilafilmes.com.br
