@@ -14,8 +14,14 @@ module.exports = {
         exclude: /node_modules/,
         use: { loader: "babel-loader" }
       },
-      { test: /\.(png|svg|jpg|gif)$/, use: "file-loader" },
-      { test: /\.(woff|woff2|eot|ttf|otf)$/, use: "file-loader" },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: ["file-loader"]
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: "file-loader"
+      },
       {
         test: /\.css$/,
         use: ExtractTextPlugin.extract({
@@ -27,17 +33,21 @@ module.exports = {
         test: /\.scss$/,
         use: ExtractTextPlugin.extract({
           fallback: "style-loader",
-          use: ["css-loader", "sass-loader"]
+          use: ["css-loader", "postcss-loader", "sass-loader"]
         })
       },
       {
         test: /\.pug$/,
         use: [{ loader: "pug-loader", options: { pretty: true } }]
+      },
+      {
+        test: /\.(html)$/,
+        use: { loader: "html-loader", options: { attrs: ["img:src"] } }
       }
     ]
   },
   plugins: [
     new ExtractTextPlugin("style.css"),
-    new HtmlWebpackPlugin({ template: "index.pug" })
+    new HtmlWebpackPlugin({ template: "index.html" })
   ]
 };
