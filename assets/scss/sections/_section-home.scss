@@ -1,6 +1,6 @@
 #section-home {
   // background
-  background-image: url("../images/layout/foto-principal.png");
+  background-image: url("../images/layout/foto-principal.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -27,7 +27,7 @@
 
       .title.words {
         .char {
-          animation: slideDown .5s forwards;
+          animation: slideDown 0.5s forwards;
           animation-delay: calc(0.6s + (0.1s * var(--char-index)));
           opacity: 0;
         }
